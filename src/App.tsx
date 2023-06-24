@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Header from './components/layouts/Header'
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
@@ -11,6 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/galeria' element={<Galeria />} />
         <Route path="/servicios" element={<Services />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>     
